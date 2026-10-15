@@ -30,13 +30,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      - name: Prepare web assets
+        run: |
+          mkdir -p www
+          cp index.html style.css app.js manifest.webmanifest sw.js www/
 
       - name: Install Android project
         run: |
           npm install @capacitor/core@6.2.1 @capacitor/android@6.2.1 @capacitor/cli@6.2.1
           npx cap add android
           npx cap sync android
-
       - name: Build debug APK
         run: |
           cd android
