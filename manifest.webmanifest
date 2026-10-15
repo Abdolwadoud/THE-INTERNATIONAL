@@ -1,0 +1,11 @@
+{
+  "name": "THE INTERNATIONAL",
+  "short_name": "THE INTERNATIONAL",
+  "description": "منصة تعليمية للتعلم عن بعد",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#10264a",
+  "orientation": "portrait",
+  "icons": []
+}
